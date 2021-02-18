@@ -19,6 +19,7 @@
 		FA50B02425DD3373007D75D8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B02325DD3373007D75D8 /* RoundedButton.swift */; };
 		FA68CC7025DD781A008AB110 /* UIControl+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68CC6F25DD781A008AB110 /* UIControl+Combine.swift */; };
 		FA68CC7925DD7A19008AB110 /* ControlPublisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA68CC7825DD7A19008AB110 /* ControlPublisher */; };
+		FA958D9F25DEA3260054C714 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA958D9E25DEA3260054C714 /* README.md */; };
 		FAA95DEA25DD386C008A3E11 /* UIViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA95DE925DD386C008A3E11 /* UIViewController+SwiftUI.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		FA50B01025DD10F3007D75D8 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
 		FA50B02325DD3373007D75D8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		FA68CC6F25DD781A008AB110 /* UIControl+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Combine.swift"; sourceTree = "<group>"; };
+		FA958D9E25DEA3260054C714 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FAA95DE925DD386C008A3E11 /* UIViewController+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwiftUI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +56,7 @@
 		FA50AFE825DCF884007D75D8 = {
 			isa = PBXGroup;
 			children = (
+				FA958D9E25DEA3260054C714 /* README.md */,
 				FA50AFF325DCF884007D75D8 /* SwiftUIKit */,
 				FA50AFF225DCF884007D75D8 /* Products */,
 			);
@@ -70,18 +73,13 @@
 		FA50AFF325DCF884007D75D8 /* SwiftUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FA50AFF425DCF884007D75D8 /* AppDelegate.swift */,
-				FA50AFF625DCF884007D75D8 /* SceneDelegate.swift */,
 				FA50B00D25DD1059007D75D8 /* Device.swift */,
-				FA50B00925DCFA2F007D75D8 /* DevicesView.swift */,
 				FA50B01025DD10F3007D75D8 /* DevicesViewModel.swift */,
+				FA50B00925DCFA2F007D75D8 /* DevicesView.swift */,
 				FA50B02325DD3373007D75D8 /* RoundedButton.swift */,
 				FA50AFF825DCF884007D75D8 /* HomeViewController.swift */,
 				FA68CC7225DD7858008AB110 /* Extensions */,
-				FA50AFFA25DCF884007D75D8 /* Main.storyboard */,
-				FA50AFFD25DCF885007D75D8 /* Assets.xcassets */,
-				FA50AFFF25DCF885007D75D8 /* LaunchScreen.storyboard */,
-				FA50B00225DCF885007D75D8 /* Info.plist */,
+				FA958DA125DEA3430054C714 /* Supporting files */,
 			);
 			path = SwiftUIKit;
 			sourceTree = "<group>";
@@ -93,6 +91,19 @@
 				FA68CC6F25DD781A008AB110 /* UIControl+Combine.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA958DA125DEA3430054C714 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				FA50AFF425DCF884007D75D8 /* AppDelegate.swift */,
+				FA50AFF625DCF884007D75D8 /* SceneDelegate.swift */,
+				FA50AFFA25DCF884007D75D8 /* Main.storyboard */,
+				FA50AFFD25DCF885007D75D8 /* Assets.xcassets */,
+				FA50AFFF25DCF885007D75D8 /* LaunchScreen.storyboard */,
+				FA50B00225DCF885007D75D8 /* Info.plist */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				FA50B00125DCF885007D75D8 /* LaunchScreen.storyboard in Resources */,
 				FA50AFFE25DCF885007D75D8 /* Assets.xcassets in Resources */,
+				FA958D9F25DEA3260054C714 /* README.md in Resources */,
 				FA50AFFC25DCF884007D75D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,15 +340,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSV34WR9PC;
-				INFOPLIST_FILE = SwiftUIKit/Info.plist;
+				INFOPLIST_FILE = "SwiftUIKit/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.as.UIHostingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.SwiftUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -347,15 +359,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSV34WR9PC;
-				INFOPLIST_FILE = SwiftUIKit/Info.plist;
+				INFOPLIST_FILE = "SwiftUIKit/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.as.UIHostingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.SwiftUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

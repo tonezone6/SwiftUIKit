@@ -23,7 +23,6 @@ class HomeViewController: UIViewController {
         
         view = container
         view.backgroundColor = .systemGroupedBackground
-        view.setNeedsLayout()
     }
     
     override func viewDidLoad() {
