@@ -8,15 +8,14 @@
 import Combine
 import SwiftUI
 
-struct RoundedButton: View {
+struct AppleButton: View {
     
-    let title: String
     let tap = PassthroughSubject<Void, Never>()
     
     var body: some View {
-        Button(title) { tap.send() }
+        Button("Show 🍎 devices") { tap.send() }
             .padding(16)
-            .font(.system(size: 14, weight: .medium))
+            .font(.subheadline)
             .foregroundColor(Color.blue)
             .background(Color.white)
             .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -26,6 +25,8 @@ struct RoundedButton: View {
 
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedButton(title: "Button")
+        AppleButton()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

@@ -8,19 +8,22 @@
 import Combine
 import Foundation
 
-class DevicesViewModel: ObservableObject {
+enum State {
+    case progress
+    case finished([Device])
+    case failed(Error)
+}
 
-    @Published private(set) var devices: [Device] = []
-    @Published private(set) var selected: Device?
+class DevicesViewModel: ObservableObject {
+    @Published
+    private(set) var state = State.progress
+    private      var subscription: Cancellable?
     
     init() {
-        // do some work...
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.devices = Device.devices
-        }
-    }
-    
-    func didSelect(_ device: Device) {
-        selected = device
+        subscription = Just(Device.devices)
+            .delay(for: 1.5, scheduler: RunLoop.main)
+            .map { .finished($0) }
+            .catch { Just(.failed($0)) }
+            .weakAssign(to: \.state, on: self)
     }
 }

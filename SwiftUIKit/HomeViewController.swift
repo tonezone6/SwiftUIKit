@@ -11,41 +11,28 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var button: RoundedButton?
-    var subscriptions: [AnyCancellable] = []
+    var button: AppleButton? // SwiftUI view.
+    var cancellable: AnyCancellable?
     
     override func loadView() {
-        button = RoundedButton(title: "Show devices")
-        
-        /// Get the view container
-        /// for the SwiftUI button.
-        let container = containerWith(swiftUI: button)
-        
-        view = container
+        button = AppleButton()
+        view = containerWith(swiftUI: button)
         view.backgroundColor = .systemGroupedBackground
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        button?.tap
+        cancellable = button?.tap
             .sink(receiveValue: pushDevices)
-            .store(in: &subscriptions)
     }
     
     func pushDevices() {
-        let vm = DevicesViewModel()
-        
-        vm.$selected
-            .compactMap { $0 }
-            .map(\.name)
-            .sink(receiveValue: { print($0) })
-            .store(in: &subscriptions)
-        
-        let view = DevicesView(viewModel: vm)
-        let vc = UIHostingController(rootView: view)
-        
+        let viewModel = DevicesViewModel()
+        let view = DevicesView(viewModel: viewModel)
+        let controller = UIHostingController(rootView: view)
+
         navigationController?
-            .pushViewController(vc, animated: true)
+            .pushViewController(controller, animated: true)
     }
 }

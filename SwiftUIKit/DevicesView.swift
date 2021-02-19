@@ -8,25 +8,23 @@
 import SwiftUI
 
 struct DevicesView: View {
-    
     @ObservedObject var viewModel: DevicesViewModel
         
     var body: some View {
-        List(viewModel.devices) { device in
-            Label(
-                device.name,
-                systemImage: device.icon
-            )
-            .onTapGesture {
-                viewModel.didSelect(device)
-            }
+        switch viewModel.state {
+        case .progress:
+            ProgressView()
+        case .finished(let devices):
+            List(devices, rowContent: DeviceRow.init)
+        case .failed(let error):
+            Text(error.localizedDescription)
         }
-        .navigationTitle("Devices")
     }
 }
 
 struct DevicesView_Previews: PreviewProvider {
     static var previews: some View {
         DevicesView(viewModel: DevicesViewModel())
+            
     }
 }
