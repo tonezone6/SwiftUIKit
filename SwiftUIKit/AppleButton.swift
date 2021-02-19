@@ -9,11 +9,11 @@ import Combine
 import SwiftUI
 
 struct AppleButton: View {
-    
+    let title = "Show 🍎 devices"
     let tap = PassthroughSubject<Void, Never>()
     
     var body: some View {
-        Button("Show 🍎 devices") { tap.send() }
+        Button(title) { tap.send() }
             .padding(16)
             .font(.subheadline)
             .foregroundColor(Color.blue)

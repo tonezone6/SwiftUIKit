@@ -10,12 +10,10 @@ import SwiftUI
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    var button: AppleButton? // SwiftUI view.
-    var cancellable: AnyCancellable?
+    /* SwiftUI */ let button = AppleButton()
+    var subscription: Cancellable?
     
     override func loadView() {
-        button = AppleButton()
         view = containerWith(swiftUI: button)
         view.backgroundColor = .systemGroupedBackground
     }
@@ -23,16 +21,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cancellable = button?.tap
+        subscription = button.tap
             .sink(receiveValue: pushDevices)
     }
     
     func pushDevices() {
-        let viewModel = DevicesViewModel()
-        let view = DevicesView(viewModel: viewModel)
-        let controller = UIHostingController(rootView: view)
-
+        /* SwiftUI */ let view = DevicesView()
+        let vc = UIHostingController(rootView: view)
         navigationController?
-            .pushViewController(controller, animated: true)
+            .pushViewController(vc, animated: true)
     }
 }

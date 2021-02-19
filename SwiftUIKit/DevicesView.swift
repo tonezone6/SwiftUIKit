@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DevicesView: View {
-    @ObservedObject var viewModel: DevicesViewModel
+    @ObservedObject var viewModel = DevicesViewModel()
         
     var body: some View {
         switch viewModel.state {
-        case .progress:
+        case .loading:
             ProgressView()
         case .finished(let devices):
             List(devices, rowContent: DeviceRow.init)
@@ -25,6 +25,5 @@ struct DevicesView: View {
 struct DevicesView_Previews: PreviewProvider {
     static var previews: some View {
         DevicesView(viewModel: DevicesViewModel())
-            
     }
 }
