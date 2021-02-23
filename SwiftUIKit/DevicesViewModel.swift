@@ -23,9 +23,6 @@ class DevicesViewModel: ObservableObject {
         subscription = Just(Device.devices)
             .delay(for: 1.5, scheduler: RunLoop.main)
             .map { .finished($0) }
-            .catch { error in
-                Just(.failed(error))
-            }
             .weakAssign(to: \.state, on: self)
     }
 }

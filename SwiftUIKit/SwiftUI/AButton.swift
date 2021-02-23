@@ -8,8 +8,8 @@
 import Combine
 import SwiftUI
 
-struct AppleButton: View {
-    let title = "Show 🍎 devices"
+struct AButton: View {
+    let title: String
     let tap = PassthroughSubject<Void, Never>()
     
     var body: some View {
@@ -25,7 +25,7 @@ struct AppleButton: View {
 
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
-        AppleButton()
+        AButton(title: "Button")
             .previewLayout(.sizeThatFits)
             .padding()
     }

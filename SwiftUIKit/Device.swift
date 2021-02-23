@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Device: Identifiable {
+struct Device: Identifiable, Hashable {
     let id: Int
     let icon: String
     let name: String

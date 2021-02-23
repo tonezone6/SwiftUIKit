@@ -10,7 +10,7 @@ import SwiftUI
 import UIKit
 
 class HomeViewController: UIViewController {
-    /* SwiftUI */ let button = AppleButton()
+    let button = AButton(title: "Devices") // swiftUI
     var subscription: Cancellable?
     
     override func loadView() {
@@ -20,15 +20,13 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         subscription = button.tap
             .sink(receiveValue: pushDevices)
     }
     
     func pushDevices() {
-        /* SwiftUI */ let view = DevicesView()
+        let view = DevicesView() // swiftUI
         let vc = UIHostingController(rootView: view)
-        navigationController?
-            .pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

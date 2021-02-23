@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-// Using UIKit activity indicator.
-
+/// UIKit activity indicator.
 struct ActivityIndicator: UIViewRepresentable {
     let style: UIActivityIndicatorView.Style
 
@@ -22,7 +21,6 @@ struct ActivityIndicator: UIViewRepresentable {
 }
 
 struct ProgressView: View {
-    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
