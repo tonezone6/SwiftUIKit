@@ -21,14 +21,4 @@ class DevicesViewModelTests: XCTestCase {
 
         XCTAssertEqual(elements, ["foo", "bar", "baz"])
     }
-
-    func test_state_elements_loadingThenFinished() throws {
-        let viewModel = DevicesViewModel()
-        let recorder = viewModel.$state.record()
-        
-        let elements = try wait(for: recorder.next(2), timeout: 10)
-
-        XCTAssertEqual(elements.first, .loading)
-        XCTAssertEqual(elements.last, .finished(Device.devices))
-    }
 }

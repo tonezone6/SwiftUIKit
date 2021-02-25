@@ -9,7 +9,6 @@ import SwiftUI
 import UIKit
 
 public extension Color {
-    // UIColors.
 
     static let lightText = Color(.lightText)
     static let darkText = Color(.darkText)
@@ -22,5 +21,6 @@ public extension Color {
     static let systemBackground = Color(.systemBackground)
     static let secondarySystemBackground = Color(.secondarySystemBackground)
     static let tertiarySystemBackground = Color(.tertiarySystemBackground)
+    static let systemGroupedBackground = Color(UIColor.systemGroupedBackground)
 }
 

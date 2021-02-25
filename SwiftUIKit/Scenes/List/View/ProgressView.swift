@@ -8,6 +8,7 @@
 import SwiftUI
 
 /// UIKit activity indicator.
+
 struct ActivityIndicator: UIViewRepresentable {
     let style: UIActivityIndicatorView.Style
 

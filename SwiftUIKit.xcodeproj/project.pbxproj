@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA23395E25E64DE70082296E /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23395D25E64DE70082296E /* FormView.swift */; };
+		FA23396625E672190082296E /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23396525E672190082296E /* FormViewModel.swift */; };
+		FA23396C25E6723E0082296E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23396A25E6723E0082296E /* Location.swift */; };
+		FA23398725E68E5F0082296E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23398625E68E5F0082296E /* CustomTextField.swift */; };
+		FA2339CF25E7BCC10082296E /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2339C925E7BCAB0082296E /* FormViewController.swift */; };
 		FA34251325E41340004B07EC /* CombineExpectations in Frameworks */ = {isa = PBXBuildFile; productRef = FA34251225E41340004B07EC /* CombineExpectations */; };
-		FA34251725E4DF5E004B07EC /* State-Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34251625E4DF5E004B07EC /* State-Equatable.swift */; };
+		FA3605B025E7F7AD0042D65F /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3605AF25E7F7AD0042D65F /* LocationViewController.swift */; };
 		FA50AFF525DCF884007D75D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50AFF425DCF884007D75D8 /* AppDelegate.swift */; };
 		FA50AFF725DCF884007D75D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50AFF625DCF884007D75D8 /* SceneDelegate.swift */; };
-		FA50AFF925DCF884007D75D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50AFF825DCF884007D75D8 /* HomeViewController.swift */; };
-		FA50AFFC25DCF884007D75D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA50AFFA25DCF884007D75D8 /* Main.storyboard */; };
 		FA50AFFE25DCF885007D75D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA50AFFD25DCF885007D75D8 /* Assets.xcassets */; };
 		FA50B00125DCF885007D75D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA50AFFF25DCF885007D75D8 /* LaunchScreen.storyboard */; };
-		FA50B00A25DCFA2F007D75D8 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B00925DCFA2F007D75D8 /* DevicesView.swift */; };
-		FA50B00E25DD1059007D75D8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B00D25DD1059007D75D8 /* Device.swift */; };
-		FA50B01125DD10F3007D75D8 /* DevicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B01025DD10F3007D75D8 /* DevicesViewModel.swift */; };
-		FA50B02425DD3373007D75D8 /* AButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B02325DD3373007D75D8 /* AButton.swift */; };
+		FA50B00A25DCFA2F007D75D8 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B00925DCFA2F007D75D8 /* LocationsView.swift */; };
+		FA50B01125DD10F3007D75D8 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B01025DD10F3007D75D8 /* LocationsViewModel.swift */; };
+		FA50B02425DD3373007D75D8 /* ButtonStyle-Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50B02325DD3373007D75D8 /* ButtonStyle-Custom.swift */; };
 		FA562A5F25DFA54A003AF9B0 /* Publisher-WeakAssign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA562A5E25DFA54A003AF9B0 /* Publisher-WeakAssign.swift */; };
 		FA68CC7025DD781A008AB110 /* UIControl-Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68CC6F25DD781A008AB110 /* UIControl-Combine.swift */; };
 		FA68CC7925DD7A19008AB110 /* ControlPublisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA68CC7825DD7A19008AB110 /* ControlPublisher */; };
-		FA889ECD25DFD11800634D5C /* DeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889ECC25DFD11800634D5C /* DeviceRow.swift */; };
+		FA889ECD25DFD11800634D5C /* LocationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889ECC25DFD11800634D5C /* LocationRow.swift */; };
 		FA889ED625DFEE1C00634D5C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889ED525DFEE1C00634D5C /* ProgressView.swift */; };
 		FA889ED925DFF28F00634D5C /* Color-UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA889ED825DFF28F00634D5C /* Color-UIColor.swift */; };
 		FA958D9F25DEA3260054C714 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FA958D9E25DEA3260054C714 /* README.md */; };
@@ -41,22 +43,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA34251625E4DF5E004B07EC /* State-Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "State-Equatable.swift"; sourceTree = "<group>"; };
+		FA23395D25E64DE70082296E /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		FA23396525E672190082296E /* FormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
+		FA23396A25E6723E0082296E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		FA23398625E68E5F0082296E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FA2339C925E7BCAB0082296E /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		FA3605AF25E7F7AD0042D65F /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		FA50AFF125DCF884007D75D8 /* SwiftUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA50AFF425DCF884007D75D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA50AFF625DCF884007D75D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA50AFF825DCF884007D75D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		FA50AFFB25DCF884007D75D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA50AFFD25DCF885007D75D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA50B00025DCF885007D75D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA50B00225DCF885007D75D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA50B00925DCFA2F007D75D8 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
-		FA50B00D25DD1059007D75D8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		FA50B01025DD10F3007D75D8 /* DevicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModel.swift; sourceTree = "<group>"; };
-		FA50B02325DD3373007D75D8 /* AButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AButton.swift; sourceTree = "<group>"; };
+		FA50B00925DCFA2F007D75D8 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		FA50B01025DD10F3007D75D8 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		FA50B02325DD3373007D75D8 /* ButtonStyle-Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle-Custom.swift"; sourceTree = "<group>"; };
 		FA562A5E25DFA54A003AF9B0 /* Publisher-WeakAssign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher-WeakAssign.swift"; sourceTree = "<group>"; };
 		FA68CC6F25DD781A008AB110 /* UIControl-Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl-Combine.swift"; sourceTree = "<group>"; };
-		FA889ECC25DFD11800634D5C /* DeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRow.swift; sourceTree = "<group>"; };
+		FA889ECC25DFD11800634D5C /* LocationRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRow.swift; sourceTree = "<group>"; };
 		FA889ED525DFEE1C00634D5C /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		FA889ED825DFF28F00634D5C /* Color-UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-UIColor.swift"; sourceTree = "<group>"; };
 		FA958D9E25DEA3260054C714 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -86,15 +90,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA34251E25E4E4CE004B07EC /* SwiftUI */ = {
+		FA23397925E6863E0082296E /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				FA50B02325DD3373007D75D8 /* AButton.swift */,
-				FA889ED525DFEE1C00634D5C /* ProgressView.swift */,
-				FA889ECC25DFD11800634D5C /* DeviceRow.swift */,
-				FA50B00925DCFA2F007D75D8 /* DevicesView.swift */,
+				FA50B02325DD3373007D75D8 /* ButtonStyle-Custom.swift */,
+				FA889ED825DFF28F00634D5C /* Color-UIColor.swift */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		FA2339A025E7B5B70082296E /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				FA562A5E25DFA54A003AF9B0 /* Publisher-WeakAssign.swift */,
+				FA68CC6F25DD781A008AB110 /* UIControl-Combine.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		FA2339B325E7BB280082296E /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				FA23396A25E6723E0082296E /* Location.swift */,
+				FA2339B625E7BB9A0082296E /* View */,
+				FA23396525E672190082296E /* FormViewModel.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		FA2339B425E7BB2C0082296E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FA2339BB25E7BBC00082296E /* View */,
+				FA50B01025DD10F3007D75D8 /* LocationsViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		FA2339B525E7BB3C0082296E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FA2339B325E7BB280082296E /* Form */,
+				FA2339B425E7BB2C0082296E /* List */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FA2339B625E7BB9A0082296E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA23398625E68E5F0082296E /* CustomTextField.swift */,
+				FA23395D25E64DE70082296E /* FormView.swift */,
+				FA2339C925E7BCAB0082296E /* FormViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA2339BB25E7BBC00082296E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA889ED525DFEE1C00634D5C /* ProgressView.swift */,
+				FA889ECC25DFD11800634D5C /* LocationRow.swift */,
+				FA50B00925DCFA2F007D75D8 /* LocationsView.swift */,
+				FA3605AF25E7F7AD0042D65F /* LocationViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FA50AFE825DCF884007D75D8 = {
@@ -119,10 +179,7 @@
 		FA50AFF325DCF884007D75D8 /* SwiftUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				FA50B00D25DD1059007D75D8 /* Device.swift */,
-				FA34251E25E4E4CE004B07EC /* SwiftUI */,
-				FA50B01025DD10F3007D75D8 /* DevicesViewModel.swift */,
-				FA50AFF825DCF884007D75D8 /* HomeViewController.swift */,
+				FA2339B525E7BB3C0082296E /* Scenes */,
 				FA68CC7225DD7858008AB110 /* Extensions */,
 				FA958DA125DEA3430054C714 /* Supporting files */,
 			);
@@ -132,9 +189,8 @@
 		FA68CC7225DD7858008AB110 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FA889ED825DFF28F00634D5C /* Color-UIColor.swift */,
-				FA562A5E25DFA54A003AF9B0 /* Publisher-WeakAssign.swift */,
-				FA68CC6F25DD781A008AB110 /* UIControl-Combine.swift */,
+				FA2339A025E7B5B70082296E /* Combine */,
+				FA23397925E6863E0082296E /* SwiftUI */,
 				FAA95DE925DD386C008A3E11 /* UIViewController-SwiftUI.swift */,
 			);
 			path = Extensions;
@@ -145,7 +201,6 @@
 			children = (
 				FA50AFF425DCF884007D75D8 /* AppDelegate.swift */,
 				FA50AFF625DCF884007D75D8 /* SceneDelegate.swift */,
-				FA50AFFA25DCF884007D75D8 /* Main.storyboard */,
 				FA50AFFD25DCF885007D75D8 /* Assets.xcassets */,
 				FA50AFFF25DCF885007D75D8 /* LaunchScreen.storyboard */,
 				FA50B00225DCF885007D75D8 /* Info.plist */,
@@ -156,7 +211,6 @@
 		FACBC5CE25E3F50F00D73CAE /* SwiftUIKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA34251625E4DF5E004B07EC /* State-Equatable.swift */,
 				FACBC5CF25E3F50F00D73CAE /* DevicesViewModelTests.swift */,
 				FACBC5D125E3F50F00D73CAE /* Info.plist */,
 			);
@@ -256,7 +310,6 @@
 				FA50B00125DCF885007D75D8 /* LaunchScreen.storyboard in Resources */,
 				FA50AFFE25DCF885007D75D8 /* Assets.xcassets in Resources */,
 				FA958D9F25DEA3260054C714 /* README.md in Resources */,
-				FA50AFFC25DCF884007D75D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,19 +327,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA50B02425DD3373007D75D8 /* AButton.swift in Sources */,
+				FA50B02425DD3373007D75D8 /* ButtonStyle-Custom.swift in Sources */,
+				FA23396C25E6723E0082296E /* Location.swift in Sources */,
 				FA68CC7025DD781A008AB110 /* UIControl-Combine.swift in Sources */,
-				FA889ECD25DFD11800634D5C /* DeviceRow.swift in Sources */,
+				FA889ECD25DFD11800634D5C /* LocationRow.swift in Sources */,
+				FA3605B025E7F7AD0042D65F /* LocationViewController.swift in Sources */,
 				FA889ED925DFF28F00634D5C /* Color-UIColor.swift in Sources */,
-				FA50B00A25DCFA2F007D75D8 /* DevicesView.swift in Sources */,
-				FA50AFF925DCF884007D75D8 /* HomeViewController.swift in Sources */,
+				FA50B00A25DCFA2F007D75D8 /* LocationsView.swift in Sources */,
+				FA2339CF25E7BCC10082296E /* FormViewController.swift in Sources */,
+				FA23398725E68E5F0082296E /* CustomTextField.swift in Sources */,
 				FA889ED625DFEE1C00634D5C /* ProgressView.swift in Sources */,
 				FA50AFF525DCF884007D75D8 /* AppDelegate.swift in Sources */,
+				FA23396625E672190082296E /* FormViewModel.swift in Sources */,
 				FA562A5F25DFA54A003AF9B0 /* Publisher-WeakAssign.swift in Sources */,
 				FAA95DEA25DD386C008A3E11 /* UIViewController-SwiftUI.swift in Sources */,
 				FA50AFF725DCF884007D75D8 /* SceneDelegate.swift in Sources */,
-				FA50B01125DD10F3007D75D8 /* DevicesViewModel.swift in Sources */,
-				FA50B00E25DD1059007D75D8 /* Device.swift in Sources */,
+				FA23395E25E64DE70082296E /* FormView.swift in Sources */,
+				FA50B01125DD10F3007D75D8 /* LocationsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +351,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA34251725E4DF5E004B07EC /* State-Equatable.swift in Sources */,
 				FACBC5D025E3F50F00D73CAE /* DevicesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,14 +366,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FA50AFFA25DCF884007D75D8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA50AFFB25DCF884007D75D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA50AFFF25DCF885007D75D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
