@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LocationsView: View {
+struct LocationsListView: View {
     @ObservedObject var viewModel: LocationsViewModel
         
     var body: some View {
@@ -22,6 +22,6 @@ struct LocationsView: View {
 struct LocationsView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = LocationsViewModel(location: .empty)
-        return LocationsView(viewModel: viewModel)
+        return LocationsListView(viewModel: viewModel)
     }
 }

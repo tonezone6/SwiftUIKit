@@ -8,10 +8,10 @@
 import UIKit
 
 class LocationsViewController: UIViewController {
-    let listView: LocationsView
+    let listView: LocationsListView
     
     init(viewModel: LocationsViewModel) {
-        self.listView = LocationsView(viewModel: viewModel)
+        listView = LocationsListView(viewModel: viewModel)
         super.init(nibName: nil, bundle: nil)
     }
     
